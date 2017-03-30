@@ -1,4 +1,6 @@
-//  Copyright © 2016 Open Whisper Systems. All rights reserved.
+//
+//  Copyright (c) 2017 Open Whisper Systems. All rights reserved.
+//
 
 #import "TSAttachmentStream.h"
 #import "TSContentAdapters.h"
@@ -69,7 +71,7 @@
 
     XCTAssertFalse([self.messageAdapter canPerformEditingAction:NSSelectorFromString(@"save:")]);
 
-    //e.g. any other unsupported action
+    // e.g. any other unsupported action
     XCTAssertFalse([self.messageAdapter canPerformEditingAction:@selector(paste:)]);
 }
 
@@ -118,10 +120,10 @@
     XCTAssertTrue([self.messageAdapter canPerformEditingAction:@selector(delete:)]);
     XCTAssertTrue([self.messageAdapter canPerformEditingAction:@selector(copy:)]);
 
-    //e.g. Can't save an audio attachment at this time.
+    // e.g. Can't save an audio attachment at this time.
     XCTAssertFalse([self.messageAdapter canPerformEditingAction:NSSelectorFromString(@"save:")]);
 
-    //e.g. any other unsupported action
+    // e.g. any other unsupported action
     XCTAssertFalse([self.messageAdapter canPerformEditingAction:@selector(paste:)]);
 }
 
@@ -264,7 +266,8 @@
     self.messageAdapter.mediaItem = [[TSVideoAttachmentAdapter alloc] initWithAttachment:audioAttachment incoming:NO];
 
     [self.messageAdapter performEditingAction:@selector(copy:)];
-    XCTAssertEqualObjects(self.fakeAudioData, [UIPasteboard.generalPasteboard dataForPasteboardType:(NSString *)kUTTypeMP3]);
+    XCTAssertEqualObjects(
+        self.fakeAudioData, [UIPasteboard.generalPasteboard dataForPasteboardType:(NSString *)kUTTypeMP3]);
 }
 
 - (void)testPerformCopyEditingActionWithM4aAudioMessage
@@ -278,7 +281,8 @@
     self.messageAdapter.mediaItem = [[TSVideoAttachmentAdapter alloc] initWithAttachment:audioAttachment incoming:NO];
 
     [self.messageAdapter performEditingAction:@selector(copy:)];
-    XCTAssertEqualObjects(self.fakeAudioData, [UIPasteboard.generalPasteboard dataForPasteboardType:(NSString *)kUTTypeMPEG4Audio]);
+    XCTAssertEqualObjects(
+        self.fakeAudioData, [UIPasteboard.generalPasteboard dataForPasteboardType:(NSString *)kUTTypeMPEG4Audio]);
 }
 
 - (void)testPerformCopyEditingActionWithGenericAudioMessage
@@ -292,7 +296,8 @@
     self.messageAdapter.mediaItem = [[TSVideoAttachmentAdapter alloc] initWithAttachment:audioAttachment incoming:NO];
 
     [self.messageAdapter performEditingAction:@selector(copy:)];
-    XCTAssertEqualObjects(self.fakeAudioData, [UIPasteboard.generalPasteboard dataForPasteboardType:(NSString *)kUTTypeAudio]);
+    XCTAssertEqualObjects(
+        self.fakeAudioData, [UIPasteboard.generalPasteboard dataForPasteboardType:(NSString *)kUTTypeAudio]);
 }
 
 //  TODO - We don't currenlty have a good way of testing "copy of an animated message attachment"
@@ -311,7 +316,8 @@
 //    // "some-animated-gif" doesn't exist yet
 //    NSData *imageData = [[NSData alloc] initWithContentsOfFile:@"some-animated-gif"];
 //    //TODO build attachment with imageData
-//    TSAttachmentStream animatedAttachement = [[TSAttachmentStream alloc] initWithIdentifier:@"test-animated-attachment-id" data:imageDatq key:@"TODO" contentType:@"image/gif"];
+//    TSAttachmentStream animatedAttachement = [[TSAttachmentStream alloc]
+//    initWithIdentifier:@"test-animated-attachment-id" data:imageDatq key:@"TODO" contentType:@"image/gif"];
 //    TSAnimatedAdapter *animatedAdapter = [[TSAnimatedAdapter alloc] initWithAttachment:animatedAttachment];
 //    animatedAdapter.image = image;
 //    self.messageAdapter.mediaItem = animatedAdapter;

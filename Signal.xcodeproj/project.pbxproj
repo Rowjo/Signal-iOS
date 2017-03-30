@@ -53,6 +53,8 @@
 		34B3F8241E8D483F0035BE1A /* SignalAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3F7FE1E8D483F0035BE1A /* SignalAttachment.swift */; };
 		34B3F8251E8D483F0035BE1A /* SignalsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3F8001E8D483F0035BE1A /* SignalsNavigationController.m */; };
 		34B3F8261E8D483F0035BE1A /* SignalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3F8021E8D483F0035BE1A /* SignalsViewController.m */; };
+		34B3F82E1E8D49AE0035BE1A /* GroupContactsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3F82D1E8D49AE0035BE1A /* GroupContactsResult.m */; };
+		34B3F82F1E8D49ED0035BE1A /* TSMessageAdapterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3F82A1E8D492A0035BE1A /* TSMessageAdapterTest.m */; };
 		34FD93701E3BD43A00109093 /* OWSAnyTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD936F1E3BD43A00109093 /* OWSAnyTouchGestureRecognizer.m */; };
 		450573FE1E78A06D00615BB4 /* OWS103EnableVideoCalling.m in Sources */ = {isa = PBXBuildFile; fileRef = 450573FD1E78A06D00615BB4 /* OWS103EnableVideoCalling.m */; };
 		4505C2BF1E648EA300CEBF41 /* ExperienceUpgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505C2BE1E648EA300CEBF41 /* ExperienceUpgrade.swift */; };
@@ -119,7 +121,6 @@
 		458E38371D668EBF0094BD24 /* OWSDeviceProvisioningURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E38361D668EBF0094BD24 /* OWSDeviceProvisioningURLParser.m */; };
 		458E383A1D6699FA0094BD24 /* OWSDeviceProvisioningURLParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E38391D6699FA0094BD24 /* OWSDeviceProvisioningURLParserTest.m */; };
 		459311FC1D75C948008DD4F0 /* OWSDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 459311FB1D75C948008DD4F0 /* OWSDeviceTableViewCell.m */; };
-		459C3F0D1C9B3A1B003ACF51 /* TSMessageAdapterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 459C3F0C1C9B3A1B003ACF51 /* TSMessageAdapterTest.m */; };
 		45AE48511E0732D6004D96C2 /* TurnServerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE48501E0732D6004D96C2 /* TurnServerInfo.swift */; };
 		45AE48521E0732D6004D96C2 /* TurnServerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE48501E0732D6004D96C2 /* TurnServerInfo.swift */; };
 		45B201761DAECBFE00C461E0 /* HighlightableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B201751DAECBFE00C461E0 /* HighlightableLabel.swift */; };
@@ -273,7 +274,6 @@
 		B660F6DD1C29868000687D6E /* ObservableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B660F6AF1C29868000687D6E /* ObservableTest.m */; };
 		B660F6DF1C29868000687D6E /* QueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B660F6B21C29868000687D6E /* QueueTest.m */; };
 		B660F6E01C29868000687D6E /* UtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B660F6B41C29868000687D6E /* UtilTest.m */; };
-		B660F7161C29988E00687D6E /* GroupContactsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B671B2451A93B238002BBD9D /* GroupContactsResult.m */; };
 		B660F7171C29988E00687D6E /* OWSContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EB040918170B33006006FC /* OWSContactsManager.m */; };
 		B660F7181C29988E00687D6E /* CryptoTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7038632418F70C0700D4A43F /* CryptoTools.m */; };
 		B660F7191C29988E00687D6E /* EvpMessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701231B418ECAA4500D456C4 /* EvpMessageDigest.m */; };
@@ -321,7 +321,6 @@
 		B660F78B1C29988E00687D6E /* Zid.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EB04FD18170B33006006FC /* Zid.m */; };
 		B660F78C1C29988E00687D6E /* UIDevice+TSHardwareVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC81A971A44558300DFEC7D /* UIDevice+TSHardwareVersion.m */; };
 		B66DBF4A19D5BBC8006EA940 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66DBF4919D5BBC8006EA940 /* Images.xcassets */; };
-		B671B2461A93B238002BBD9D /* GroupContactsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B671B2451A93B238002BBD9D /* GroupContactsResult.m */; };
 		B67EBF5D19194AC60084CCFD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B67EBF5C19194AC60084CCFD /* Settings.bundle */; };
 		B68112EA1A4D9EC400BA82FF /* UIImage+normalizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B68112E91A4D9EC400BA82FF /* UIImage+normalizeImage.m */; };
 		B68EF9BA1C0B1EBD009C3DCD /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B68EF9B71C0B1EBD009C3DCD /* FLAnimatedImage.m */; };
@@ -465,6 +464,9 @@
 		34B3F8001E8D483F0035BE1A /* SignalsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalsNavigationController.m; sourceTree = "<group>"; };
 		34B3F8011E8D483F0035BE1A /* SignalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalsViewController.h; sourceTree = "<group>"; };
 		34B3F8021E8D483F0035BE1A /* SignalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalsViewController.m; sourceTree = "<group>"; };
+		34B3F82A1E8D492A0035BE1A /* TSMessageAdapterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessageAdapterTest.m; sourceTree = "<group>"; };
+		34B3F82C1E8D49AE0035BE1A /* GroupContactsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupContactsResult.h; sourceTree = "<group>"; };
+		34B3F82D1E8D49AE0035BE1A /* GroupContactsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupContactsResult.m; sourceTree = "<group>"; };
 		34FD936E1E3BD43A00109093 /* OWSAnyTouchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OWSAnyTouchGestureRecognizer.h; path = views/OWSAnyTouchGestureRecognizer.h; sourceTree = "<group>"; };
 		34FD936F1E3BD43A00109093 /* OWSAnyTouchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OWSAnyTouchGestureRecognizer.m; path = views/OWSAnyTouchGestureRecognizer.m; sourceTree = "<group>"; };
 		450573FC1E78A06D00615BB4 /* OWS103EnableVideoCalling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OWS103EnableVideoCalling.h; path = Migrations/OWS103EnableVideoCalling.h; sourceTree = "<group>"; };
@@ -540,7 +542,6 @@
 		459311FB1D75C948008DD4F0 /* OWSDeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSDeviceTableViewCell.m; sourceTree = "<group>"; };
 		4597E94E1D8313C100040CDE /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = translations/sq.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4597E94F1D8313CB00040CDE /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = translations/bg.lproj/Localizable.strings; sourceTree = "<group>"; };
-		459C3F0C1C9B3A1B003ACF51 /* TSMessageAdapterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSMessageAdapterTest.m; path = "view controllers/Signals/TSMessageAdapters/TSMessageAdapterTest.m"; sourceTree = "<group>"; };
 		45AE48501E0732D6004D96C2 /* TurnServerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnServerInfo.swift; sourceTree = "<group>"; };
 		45B201741DAECBFD00C461E0 /* Signal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Signal-Bridging-Header.h"; sourceTree = "<group>"; };
 		45B201751DAECBFE00C461E0 /* HighlightableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightableLabel.swift; sourceTree = "<group>"; };
@@ -749,8 +750,6 @@
 		B660F6B41C29868000687D6E /* UtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilTest.m; sourceTree = "<group>"; };
 		B661C211198EE2EA00548CA1 /* iOSVersions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSVersions.h; path = src/environment/iOSVersions.h; sourceTree = "<group>"; };
 		B66DBF4919D5BBC8006EA940 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B671B2441A93B238002BBD9D /* GroupContactsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupContactsResult.h; sourceTree = "<group>"; };
-		B671B2451A93B238002BBD9D /* GroupContactsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupContactsResult.m; sourceTree = "<group>"; };
 		B676BCEF1AA544E7009637B8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = translations/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B676BCF01AA544F5009637B8 /* el_GR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el_GR; path = translations/el_GR.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B676BCF11AA5451E009637B8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = translations/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -980,6 +979,30 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		34B3F8271E8D492A0035BE1A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				34B3F8281E8D492A0035BE1A /* Signals */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		34B3F8281E8D492A0035BE1A /* Signals */ = {
+			isa = PBXGroup;
+			children = (
+				34B3F8291E8D492A0035BE1A /* TSMessageAdapters */,
+			);
+			path = Signals;
+			sourceTree = "<group>";
+		};
+		34B3F8291E8D492A0035BE1A /* TSMessageAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				34B3F82A1E8D492A0035BE1A /* TSMessageAdapterTest.m */,
+			);
+			path = TSMessageAdapters;
+			sourceTree = "<group>";
+		};
 		4505C2BD1E648E6E00CEBF41 /* ExperienceUpgrades */ = {
 			isa = PBXGroup;
 			children = (
@@ -1085,14 +1108,6 @@
 				452D1EE71DCA90D100A57EC4 /* MesssagesBubblesSizeCalculatorTest.swift */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		459C3F0E1C9B3A20003ACF51 /* TSMessageAdapters */ = {
-			isa = PBXGroup;
-			children = (
-				459C3F0C1C9B3A1B003ACF51 /* TSMessageAdapterTest.m */,
-			);
-			name = TSMessageAdapters;
 			sourceTree = "<group>";
 		};
 		45BFFFA51D898AB8004A12A7 /* Observers */ = {
@@ -1207,7 +1222,8 @@
 		76EB040318170B33006006FC /* contact */ = {
 			isa = PBXGroup;
 			children = (
-				76EB04A818170B33006006FC /* number directory */,
+				34B3F82C1E8D49AE0035BE1A /* GroupContactsResult.h */,
+				34B3F82D1E8D49AE0035BE1A /* GroupContactsResult.m */,
 				76EB040818170B33006006FC /* OWSContactsManager.h */,
 				76EB040918170B33006006FC /* OWSContactsManager.m */,
 				45843D1D1D2236B30013E85A /* OWSContactsSearcher.h */,
@@ -1246,16 +1262,6 @@
 				B6B9ECFB198B31BA00C620D3 /* PushManager.m */,
 			);
 			path = network;
-			sourceTree = "<group>";
-		};
-		76EB04A818170B33006006FC /* number directory */ = {
-			isa = PBXGroup;
-			children = (
-				B671B2441A93B238002BBD9D /* GroupContactsResult.h */,
-				B671B2451A93B238002BBD9D /* GroupContactsResult.m */,
-			);
-			name = "number directory";
-			path = "../phone/signaling/number directory";
 			sourceTree = "<group>";
 		};
 		76EB04B118170B33006006FC /* profiling */ = {
@@ -1512,17 +1518,17 @@
 		B660F66C1C29867F00687D6E /* test */ = {
 			isa = PBXGroup;
 			children = (
-				4589670F1DC117CC00E9DD21 /* SignalTests-Bridging-Header.h */,
-				458E38381D6699110094BD24 /* Models */,
-				459C3F0E1C9B3A20003ACF51 /* TSMessageAdapters */,
 				B660F6731C29867F00687D6E /* call */,
 				B660F6751C29867F00687D6E /* contact */,
+				458E38381D6699110094BD24 /* Models */,
 				B660F6981C29868000687D6E /* profiling */,
 				B660F69B1C29868000687D6E /* push */,
+				4589670F1DC117CC00E9DD21 /* SignalTests-Bridging-Header.h */,
 				B660F69D1C29868000687D6E /* Supporting Files */,
 				B660F6A01C29868000687D6E /* TestUtil.h */,
 				B660F6A11C29868000687D6E /* TestUtil.m */,
 				B660F6A21C29868000687D6E /* util */,
+				34B3F8271E8D492A0035BE1A /* ViewControllers */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -2202,6 +2208,7 @@
 				76EB068618170B34006006FC /* ContactTableViewCell.m in Sources */,
 				34330AA31E79686200DF2FB9 /* OWSProgressView.m in Sources */,
 				453D28BA1D332DB100D523F0 /* OWSMessagesBubblesSizeCalculator.m in Sources */,
+				34B3F82E1E8D49AE0035BE1A /* GroupContactsResult.m in Sources */,
 				45F170AC1E2F0351003FC1F2 /* CallAudioSession.swift in Sources */,
 				B68EF9BB1C0B1EBD009C3DCD /* FLAnimatedImageView.m in Sources */,
 				45F170CC1E310E22003FC1F2 /* WeakTimer.swift in Sources */,
@@ -2230,7 +2237,6 @@
 				45FBC5C81DF8575700E9B410 /* CallKitCallManager.swift in Sources */,
 				45FBC5D11DF8592E00E9B410 /* SignalCall.swift in Sources */,
 				34B3F8041E8D483F0035BE1A /* AdvancedSettingsTableViewController.m in Sources */,
-				B671B2461A93B238002BBD9D /* GroupContactsResult.m in Sources */,
 				34B3F8201E8D483F0035BE1A /* PrivacySettingsTableViewController.m in Sources */,
 				452C468F1E427E200087B011 /* OutboundCallInitiator.swift in Sources */,
 				34B3F8071E8D483F0035BE1A /* CallViewController.swift in Sources */,
@@ -2285,7 +2291,6 @@
 			files = (
 				4505C2C31E648F7A00CEBF41 /* ExperienceUpgradeFinder.swift in Sources */,
 				456F6E241E24133E00FD2210 /* CallKitCallUIAdaptee.swift in Sources */,
-				459C3F0D1C9B3A1B003ACF51 /* TSMessageAdapterTest.m in Sources */,
 				456F6E251E24216100FD2210 /* DataChannelMessage.swift in Sources */,
 				452ECA4E1E087E7200E2F016 /* MessageFetcherJob.swift in Sources */,
 				45F170AD1E2F0351003FC1F2 /* CallAudioSession.swift in Sources */,
@@ -2294,7 +2299,6 @@
 				456F6E2F1E261D1000FD2210 /* PeerConnectionClientTest.swift in Sources */,
 				452C46901E427E200087B011 /* OutboundCallInitiator.swift in Sources */,
 				451DE9F81DC18C9500810E42 /* AccountManager.swift in Sources */,
-				B660F7161C29988E00687D6E /* GroupContactsResult.m in Sources */,
 				B660F7171C29988E00687D6E /* OWSContactsManager.m in Sources */,
 				B660F7181C29988E00687D6E /* CryptoTools.m in Sources */,
 				B660F7191C29988E00687D6E /* EvpMessageDigest.m in Sources */,
@@ -2392,6 +2396,7 @@
 				4505C2C01E648EA300CEBF41 /* ExperienceUpgrade.swift in Sources */,
 				B660F6D91C29868000687D6E /* CyclicalBufferTest.m in Sources */,
 				B660F6DC1C29868000687D6E /* FutureUtilTest.m in Sources */,
+				34B3F82F1E8D49ED0035BE1A /* TSMessageAdapterTest.m in Sources */,
 				450873C81D9D867B006B54F2 /* OWSIncomingMessageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
